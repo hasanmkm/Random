@@ -3,41 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Simple Website</title>
+  <title>My Aesthetic Website</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background: #f0f0f0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #444;
+      background: linear-gradient(135deg, #6c5ce7, #a29bfe);
       color: white;
-      padding: 1rem;
+      padding: 2rem 1rem;
       text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    nav {
+      margin-top: 1rem;
     }
 
     nav a {
       color: white;
       margin: 0 1rem;
       text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeaa7;
+    }
+
+    .hero {
+      background: url('https://picsum.photos/1200/400?grayscale') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 5px #000;
     }
 
     main {
       padding: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .card h2 {
+      color: #6c5ce7;
+      margin-bottom: 1rem;
     }
 
     footer {
-      background-color: #222;
+      background-color: #2d3436;
       color: white;
       text-align: center;
       padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -47,19 +89,28 @@
     <nav>
       <a href="#">Home</a>
       <a href="#">About</a>
+      <a href="#">Projects</a>
       <a href="#">Contact</a>
     </nav>
   </header>
 
+  <div class="hero">
+    Building Something Awesome
+  </div>
+
   <main>
-    <section>
+    <div class="card">
       <h2>About Me</h2>
-      <p>This is a simple webpage to test GitHub Pages hosting. Enjoy!</p>
-    </section>
+      <p>
+        Hi! I'm learning web development and testing GitHub Pages. This is a clean and aesthetic example to get started. 
+        I'll be adding more features soon—stay tuned!
+      </p>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 My Name</p>
+    &copy; 2025 My Name | Powered by GitHub Pages
   </footer>
 </body>
 </html>
+
